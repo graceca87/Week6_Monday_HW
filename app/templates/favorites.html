@@ -3,17 +3,32 @@
 {% block title %} Favorites {% endblock title %}
 
 {% block content %}
-<h2>Favorite Things To Eat:</h2>
-    <ul>
-        {% for f in favorite_foods %}
-        <li>{{ f.title() }}</li>
-        {% endfor %}
-    </ul>
-    <ul>
-        <li>Ice Cream</li>
-        <li>Reuben Sandwiches</li>
-        <li>East Coast Pizza</li>
-        <li>Mom's Apple Pie</li>
-        <li>Chili</li>
-    </ul>
+<div class = 'row pt-5'>
+    <div class="card" style="width: 18rem;">
+        <div class="card-header fs-4">
+            Favorite Things to Eat:
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">ice cream</li>
+            <li class="list-group-item">Reuben Sandwhich</li>
+            <li class="list-group-item">East Coast Pizza</li>
+            <li class="list-group-item">Mom's Apple Pie</li>
+            <li class="list-group-item">Mozzarella Sticks</li>
+        </ul>
+    </div>
+</div>
+<div class='row pt-5'>
+    <div class="card" style="width: 18rem;">
+        <div class="card-header fs-4">
+            Favorite Movies:
+        </div>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">The Graduate</li>
+            <li class="list-group-item">Eternal Sunshine of the Spotless Mind</li>
+            <li class="list-group-item">A Clockwork Orange</li>
+            <li class="list-group-item">Sister Act 2</li>
+            <li class="list-group-item">Royal Tenenbaums</li>
+        </ul>
+    </div>
+</div>
 {% endblock content %}
