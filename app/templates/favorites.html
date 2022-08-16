@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %} Favorites {% endblock title %}
+
+{% block content %}
+<h2>Favorite Things To Eat:</h2>
+    <ul>
+        {% for f in favorite_foods %}
+        <li>{{ f.title() }}</li>
+        {% endfor %}
+    </ul>
+    <ul>
+        <li>Ice Cream</li>
+        <li>Reuben Sandwiches</li>
+        <li>East Coast Pizza</li>
+        <li>Mom's Apple Pie</li>
+        <li>Chili</li>
+    </ul>
+{% endblock content %}
